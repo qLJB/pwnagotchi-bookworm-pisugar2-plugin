@@ -25,7 +25,12 @@ class PiSugar(plugins.Plugin):
 
     def on_loaded(self):
         # Load here so it doesn't attempt to load if the plugin is not enabled
-        from pisugar2 import PiSugar2
+        try:
+            from pisugar2 import PiSugar2
+        except ImportError as e:
+            logging.error(f"[pisugar] Error importing PiSugar: {e}")
+            logging.error(f"[pisugar] Please check https://github.com/qLJB/pwnagotchi-bookworm-pisugar2-plugin/blob/master/readme.md to make sure you have installed the correct dependencies")
+            return
 
         self.ps = PiSugar2()
         logging.info("[pisugar2] plugin loaded.")
