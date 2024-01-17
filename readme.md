@@ -11,12 +11,9 @@ I have updated the commands required for a clean install since there was some is
 # Go to the home directory
 cd ~
 
-# Install PiSugar Power Manager Manually, the auto install uses 32bit
-wget https://github.com/PiSugar/pisugar-power-manager-rs/releases/download/v1.7.5/pisugar-poweroff_1.7.5_arm64.deb
-wget https://github.com/PiSugar/pisugar-power-manager-rs/releases/download/v1.7.5/pisugar-server_1.7.5_arm64.deb
-sudo dpkg -i pisugar-poweroff_1.7.5_arm64.deb
-sudo dpkg -i pisugar-server_1.7.5_arm64.deb
-
+# Install PiSugar Power Manager 
+wget http://cdn.pisugar.com/release/pisugar-power-manager.sh
+bash pisugar-power-manager.sh -c release
 
 # Download the plugin and support library
 git clone https://github.com/PiSugar/pisugar2py.git
