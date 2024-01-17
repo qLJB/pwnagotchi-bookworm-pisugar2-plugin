@@ -1,5 +1,5 @@
 # Plugin to use with Pwnagotchi BookWorm Version and the PiSugar2.
-[https://github.com/jayofelony/pwnagotchi-bookworm]
+[BookWorm Pwnagotchi](https://github.com/jayofelony/pwnagotchi-bookworm)
 
 This plugin DOES require using the official [pisugar-power-manager-rs](https://github.com/PiSugar/pisugar-power-manager-rs) install. 
 
