@@ -4,7 +4,6 @@
 This plugin DOES require using the official [pisugar-power-manager-rs](https://github.com/PiSugar/pisugar-power-manager-rs) install. 
 
 I have updated the commands required for a clean install since there was some issues, the python version for bookworm has changed being one of those. 
-Error handling has been added around the import to alert the user if the dependency is missing
 
 Checkout the [main branch](https://github.com/tisboyo/pwnagotchi-pisugar2-plugin) here. 
 
